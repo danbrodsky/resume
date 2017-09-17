@@ -1,0 +1,388 @@
+<style>
+#doc {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #202e4a;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #202e4a;
+}
+
+.cate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #000;
+}
+
+#button1{
+  left: 100%;
+  position: absolute;
+  max-width: 24.5%;
+  /* visibility: hidden; */
+  background: #202e4a;
+  -webkit-transform: skew(20deg);
+}
+
+#button1:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: url("https://images8.alphacoders.com/702/702959.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  z-index: 5;
+}
+
+#button2 {
+  left: -25%;
+  max-width: 24.5%;
+}
+#button2:before {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+#overlay{
+  position: relative;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: url("vector.png");
+  background-position: 85% 100%;
+  background-size: calc(40% + 50px);
+  background-color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+
+.button2 {
+  left: -25%;
+  position: absolute;
+  max-width: 24.5%;
+  /* visibility: hidden; */
+  background: url(portrait.jpg);
+  -webkit-transform: skew(20deg);
+}
+
+.nPage{
+  transform: skew(-20deg);
+  content: url(https://i.imgur.com/BI8zhwk.png);
+  opacity: 1;
+  z-index: 10;
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  left: 0%;
+  top: -15%;
+}
+
+.select{
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+.select:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+#pos1 {
+  left: 0%;
+  max-width: 24.5%;
+  
+}
+
+#pos1:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: url("  http://i2.cdn.turner.com/money/dam/assets/170627170247-original-iphone-1024x576.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  z-index: 5;
+}
+
+#pos2 {
+  max-width: 24.5%;
+  left: 25%;
+}
+#pos2:before {
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  margin-left: 0%;
+  background: url("http://3.bp.blogspot.com/-LKSZh758LLw/UlKHQp6TnhI/AAAAAAAApok/LznzWbwlIGw/s1600/Puppy+Photography+1080p+Wallpapers+2.jpg");
+  background-attachment: fixed;
+  background-position: fixed;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  z-index: 5;
+}
+
+#pos3 {
+  max-width: 24.5%;
+  left: 50%;
+}
+#pos3:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: url("https://images8.alphacoders.com/702/702959.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  z-index: 5;
+}
+
+#pos4 {
+  max-width: 24.5%;
+  left: 75%;
+    
+}
+
+#pos4:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: url("https://lh3.googleusercontent.com/6iw3PJ3j8Aj0M8VMbp6Lmtlo0BZ0Ka5y_5KYxZh6Xh_wZIzZ0nv2neVe8lLm-gHLSNf4=w300");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  z-index: 5;
+}
+
+
+#wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -0.25%;
+  max-width: 25.5%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+
+#wrapper2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 25.5%;
+  left: 24.75%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+#wrapper3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 25%;
+  left: 49.75%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+
+#wrapper4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 25%;
+  left: 74.75%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+
+</style>
+<!-- <section id="doc"> -->
+<body>
+<div class="cate select" id="button1">
+</div>
+<div class="cate select" id="button2">
+<div id="container1">
+<div id="overlay">
+</div>
+</div>
+</div>
+<div class="cate select" id="pos1">
+</div>
+<div class="cate select" id="pos2">
+<!-- <div class="nPage"> -->
+<!-- </div> -->
+</div>
+<div class="cate select" id="pos3">
+</div>
+<div class="cate select" id="pos4">
+</div>
+<div id="wrapper">
+</div>
+<div id="wrapper2">
+</div>
+<div id="wrapper3">
+</div>
+<div id="wrapper4">
+</div>
+</body>
+<!-- </section> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+        $(".nPage").hide();
+
+        var selected;
+        
+        var h = $("body").height();
+        var w = $("body").width();
+        var tan = 2.747;
+        var d = h / 2.747;
+        var p = (d / w) * 100;
+        var three = 50 - p;
+        var two = 25 + p;
+        var four = 75 + p;
+        
+       // $("#button").stop(true, true).delay(1000).animate({left: "40%"}, 800);
+        
+        $("#wrapper3").stop(true, true).delay(1000).animate({left: three + "%", 
+        top: '-100%'}, 250);
+        $("#wrapper").stop(true, true).delay(500).animate({left: "-" + p + "%", 
+        top: '-100%'}, 250);
+        $("#wrapper2").stop(true, true).delay(750).animate({left: two + "%", 
+        top: '100%'}, 250);
+        $("#wrapper4").stop(true, true).delay(1250).animate({left: four + "%", 
+        top: '100%'}, 250);
+        
+        $("#pos1").on("click", function(){
+        $(this).removeClass('select');
+        $("#button2").addClass('select');
+        $("#pos2").addClass('select');
+        selected = 1;
+        $("#button2").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
+        $("#pos2").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
+        $("#pos3").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
+        $("#pos4").animate({maxWidth: "24.5%", left: "150.5%"}, 1000);
+        $("#button1").animate({maxWidth: "24.5%", left: "175.5%"}, 1000);
+        $("#pos1").animate({maxWidth: "100%", left: "0%"}, 1000);
+        $(".nPage").stop(true, true).delay(1000).fadeIn();
+        });
+        
+        $("#pos2").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos1").addClass('select');
+        $("#pos3").addClass('select');
+        selected = 2;
+        $("#button2").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
+        $("#pos1").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
+        $("#pos3").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
+        $("#pos4").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
+        $("#button1").animate({maxWidth: "24.5%", left: "150.5%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#pos3").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos2").addClass('select');
+        $("#pos4").addClass('select');
+        selected = 3;
+        $("#button2").animate({maxWidth: "24.5%", left: "-75%"}, 1000);
+        $("#pos1").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
+        $("#pos2").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
+        $("#pos4").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
+        $("#button1").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#pos4").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos3").addClass('select');
+        $("#button1").addClass('select');
+        selected = 4;
+        $("#button2").animate({maxWidth: "24.5%", left: "-100%"}, 1000);
+        $("#pos1").animate({maxWidth: "24.5%", left: "-75%"}, 1000);
+        $("#pos2").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
+        $("#pos3").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
+        $("#button1").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#button1").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos4").addClass('select');
+        selected = 5;
+        $("#button2").animate({maxWidth: "24.5%", left: "-125%"}, 1000);
+        $("#pos1").animate({maxWidth: "24.5%", left: "-100%"}, 1000);
+        $("#pos2").animate({maxWidth: "24.5%", left: "-75%"}, 1000);
+        $("#pos3").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
+        $("#pos4").animate({maxWidth: "24.5%", left: "-25%"}, 1000)
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#button2").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos1").addClass('select');
+        selected = 0;
+        $("#pos1").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
+        $("#pos2").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
+        $("#pos3").animate({maxWidth: "24.5%", left: "150.5%"}, 1000);
+        $("#pos4").animate({maxWidth: "24.5%", left: "175.5%"}, 1000);
+        $("#button1").animate({maxWidth: "24.5%", left: "200.5%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+
+
+        var movementStrength = 25;
+        var height = movementStrength / $("#button2").height();
+        var width = movementStrength / $("#button2").width();
+        $("#container1").mousemove(function(e){
+          var wpos = $("#button2").width()/2.5;
+          var pageX = e.pageX - ($("#button2").width());
+          var pageY = e.pageY - ($("#button2").height());
+          var newvalueX = width * pageX * -1 - 25;
+          var newvalueY = height * pageY * -1 - 50;
+          $('#container1').css("background-position", newvalueX+ wpos + "px     "+newvalueY+"px");
+          });
+        
+});
+</script>

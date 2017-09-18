@@ -8,6 +8,7 @@
 }
 
 body {
+  display: block;
   position: relative;
   width: 100%;
   height: 100%;
@@ -24,50 +25,38 @@ body {
   background-color: #000;
 }
 
+/*@media only screen and (orientation: portrait){
+  .cate {
+    max-width: 130%;
+  }
+}*/
+
 #button1{
   left: 100%;
   position: absolute;
-  max-width: 24.5%;
-  /* visibility: hidden; */
-  background: #202e4a;
-  -webkit-transform: skew(20deg);
+  width: 24.5%;
+  background-color: #202e4a;
 }
 
-#button1:before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  background: url("https://images8.alphacoders.com/702/702959.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: skew(-20deg);
-  transform: skew(-20deg);
-  z-index: 5;
-}
 
 #button2 {
-  left: -25%;
-  max-width: 24.5%;
-}
-#button2:before {
-  content: "";
   position: absolute;
-  background-color: white;
+  left: -25%;
+  width: 24.5%;
+  background-color: #202e4a;
 }
 
 #overlay{
   position: relative;
-  width: 200%;
+  max-width: 400%;
+  width: 400%;
+  max-height: 200%;
   height: 200%;
   top: -50%;
   left: -50%;
   background: url("vector.png");
-  background-position: 85% 100%;
-  background-size: calc(40% + 50px);
+  background-position: 5% 100%;
+  background-size: 40%;
   background-color: white;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -75,88 +64,80 @@ body {
   transform: skew(-20deg);
 }
 
-.button2 {
-  left: -25%;
-  position: absolute;
-  max-width: 24.5%;
-  /* visibility: hidden; */
-  background: url(portrait.jpg);
-  -webkit-transform: skew(20deg);
-}
-
-.nPage{
-  transform: skew(-20deg);
-  content: url(https://i.imgur.com/BI8zhwk.png);
-  opacity: 1;
-  z-index: 10;
-  position: fixed;
-  width: 50%;
-  height: 50%;
-  object-fit: contain;
-  left: 0%;
-  top: -15%;
-}
-
 .select{
-  opacity: 1;
-  transition: opacity 0.8s;
+  /*transition: opacity 1s;*/
 }
 .select:hover {
-  opacity: 0.65;
+  /*opacity: 0.65;*/
   cursor: pointer;
 }
 
 #pos1 {
   left: 0%;
-  max-width: 24.5%;
+  width: 24.5%;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
   
 }
 
 #pos1:before {
   content: "";
   position: absolute;
-  width: 200%;
+  max-width: 600%;
+  width: 600%;
   height: 200%;
-  top: -50%;
+  top: -100%;
   left: -50%;
-  background: url("  http://i2.cdn.turner.com/money/dam/assets/170627170247-original-iphone-1024x576.jpg");
+  background-color: white;
   background-attachment: fixed;
   background-size: cover;
   -webkit-transform: skew(-20deg);
   transform: skew(-20deg);
-  z-index: 5;
 }
 
 #pos2 {
-  max-width: 24.5%;
   left: 25%;
+    width: 24.5%;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
 }
 #pos2:before {
   content: "";
   position: fixed;
-  width: 200%;
+  max-width: 600%;
+  width: 600%;
   height: 200%;
-  top: -50%;
+  top: -100%;
   left: -50%;
-  margin-left: 0%;
-  background: url("http://3.bp.blogspot.com/-LKSZh758LLw/UlKHQp6TnhI/AAAAAAAApok/LznzWbwlIGw/s1600/Puppy+Photography+1080p+Wallpapers+2.jpg");
+  background-color: #9ef442;
   background-attachment: fixed;
-  background-position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   -webkit-transform: skew(-20deg);
   transform: skew(-20deg);
-  z-index: 5;
 }
 
 #pos3 {
-  max-width: 24.5%;
+  /*max-width: 24.5%;*/
   left: 50%;
+    width: 24.5%;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
 }
 #pos3:before {
   content: "";
   position: absolute;
-  width: 200%;
+  max-width: 600%;
+  width: 600%;
   height: 200%;
-  top: -50%;
+  top: -100%;
   left: -50%;
   background: url("https://images8.alphacoders.com/702/702959.jpg");
   background-attachment: fixed;
@@ -164,29 +145,31 @@ body {
   background-size: cover;
   -webkit-transform: skew(-20deg);
   transform: skew(-20deg);
-  z-index: 5;
 }
 
 #pos4 {
-  max-width: 24.5%;
   left: 75%;
+  width: 24.5%;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
     
 }
 
 #pos4:before {
   content: "";
   position: absolute;
-  width: 200%;
+  max-width: 600%;
+  width: 600%;
   height: 200%;
-  top: -50%;
+  top: -100%;
   left: -50%;
-  background: url("https://lh3.googleusercontent.com/6iw3PJ3j8Aj0M8VMbp6Lmtlo0BZ0Ka5y_5KYxZh6Xh_wZIzZ0nv2neVe8lLm-gHLSNf4=w300");
+  background-color: white;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
   -webkit-transform: skew(-20deg);
   transform: skew(-20deg);
-  z-index: 5;
 }
 
 
@@ -195,10 +178,13 @@ body {
   width: 100%;
   height: 100%;
   left: -0.25%;
+  top: 0%;
   max-width: 25.5%;
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
+  transition: all 0.4s;
+  transition-delay: 0.5s;
 }
 
 #wrapper2 {
@@ -207,9 +193,12 @@ body {
   height: 100%;
   max-width: 25.5%;
   left: 24.75%;
+  top: 0%;
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
+  transition: all 0.4s;
+  transition-delay: 0.9s;
 }
 #wrapper3 {
   position: absolute;
@@ -217,9 +206,12 @@ body {
   height: 100%;
   max-width: 25%;
   left: 49.75%;
+  top: 0%;
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
+  transition: all 0.4s;
+  transition-delay: 1.3s
 }
 
 #wrapper4 {
@@ -228,31 +220,40 @@ body {
   height: 100%;
   max-width: 25%;
   left: 74.75%;
+  top: 0%;
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
+  transition: all 0.4s;
+  transition-delay: 1.7s;
 }
 
+#square {
+    margin: 0; /*for centering purposes*/
+    float: left;
+    -webkit-transition: width 1s, height 1s, top 1s, left 1s, margin 1s;
+    -moz-transition: width 1s, height 1s, top 1s, left 1s, margin 1s;
+    -ms-transition: width 1s, height 1s, top 1s, left 1s, margin 1s ;
+    transition: width 1s, height 1s, top 1s, left 1s, margin 1s;
+}
 </style>
 <!-- <section id="doc"> -->
-<body>
-<div class="cate select" id="button1">
+<section id="doc">
+<div class="select cate" id="button1">
 </div>
 <div class="cate select" id="button2">
-<div id="container1">
+</div>
+<div class="cate select" id="pos1">
 <div id="overlay">
 </div>
 </div>
-</div>
-<div class="cate select" id="pos1">
-</div>
 <div class="cate select" id="pos2">
-<!-- <div class="nPage"> -->
-<!-- </div> -->
 </div>
 <div class="cate select" id="pos3">
 </div>
 <div class="cate select" id="pos4">
+<div id="overlay">
+</div>
 </div>
 <div id="wrapper">
 </div>
@@ -262,13 +263,38 @@ body {
 </div>
 <div id="wrapper4">
 </div>
-</body>
+</section>
 <!-- </section> -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script>
 $(document).ready(function(){
+
+        var lAdd = 0;
+        var wAdd = 100;
+        if (screen.orientation.type == "portrait-primary"){
+          lAdd = -15;
+          wAdd = 130;
+        }
+
+        jQuery(window).on( "orientationchange", function( event ) {
+          if (lAdd == 0){
+            lAdd = -15;
+            wAdd = 130;
+          }
+          else { 
+            lAdd = 0;
+            wAdd = 100;
+              }
+         });
+
+        var pos1 = $("#pos1");
+        var pos2 = $("#pos2");
+        var pos3 = $("#pos3");
+        var pos4 = $("#pos4");
+        var button1 = $("#button1");
+        var button2 = $("#button2");
 
         $(".nPage").hide();
 
@@ -282,107 +308,87 @@ $(document).ready(function(){
         var three = 50 - p;
         var two = 25 + p;
         var four = 75 + p;
+
+        $("#wrapper").css({"left": "-" + p + "%", "top": "-100%"});
+        $("#wrapper2").css({"left": two + "%", "top": '100%'});
+        $("#wrapper3").css({"left": three + "%", "top": '-100%'});
+        $("#wrapper4").css({"left": four + "%", "top": '100%'});
         
-       // $("#button").stop(true, true).delay(1000).animate({left: "40%"}, 800);
-        
-        $("#wrapper3").stop(true, true).delay(1000).animate({left: three + "%", 
-        top: '-100%'}, 250);
-        $("#wrapper").stop(true, true).delay(500).animate({left: "-" + p + "%", 
-        top: '-100%'}, 250);
-        $("#wrapper2").stop(true, true).delay(750).animate({left: two + "%", 
-        top: '100%'}, 250);
-        $("#wrapper4").stop(true, true).delay(1250).animate({left: four + "%", 
-        top: '100%'}, 250);
-        
-        $("#pos1").on("click", function(){
-        $(this).removeClass('select');
-        $("#button2").addClass('select');
-        $("#pos2").addClass('select');
+        pos1.on("click", function(){
+        // $(this).removeClass('select');
+        // button2.addClass('select');
+        // pos2.addClass('select');
         selected = 1;
-        $("#button2").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
-        $("#pos2").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
-        $("#pos3").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
-        $("#pos4").animate({maxWidth: "24.5%", left: "150.5%"}, 1000);
-        $("#button1").animate({maxWidth: "24.5%", left: "175.5%"}, 1000);
-        $("#pos1").animate({maxWidth: "100%", left: "0%"}, 1000);
-        $(".nPage").stop(true, true).delay(1000).fadeIn();
+        button2.css({"width": "24.5%", "left": lAdd + -25 + "%"});
+        pos2.css({"width": "24.5%", "left": lAdd * -1 + 100.5 + "%"});
+        pos3.css({"width": "24.5%", "left": lAdd * -1 + 125.5 + "%"});
+        pos4.css({"width": "24.5%", "left": lAdd * -1 + 150.5 + "%"});
+        button1.css({"width": "24.5%", "left": lAdd * -1 + 175.5 + "%"});
+        $(this).css({"width": wAdd + "%", "left": lAdd + "%"});
         });
         
-        $("#pos2").on("click", function() {
-        $(this).removeClass('select');
-        $("#pos1").addClass('select');
-        $("#pos3").addClass('select');
+        pos2.on("click", function() {
+        // $(this).removeClass('select');
+        // pos1.addClass('select');
+        // pos3.addClass('select');
         selected = 2;
-        $("#button2").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
-        $("#pos1").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
-        $("#pos3").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
-        $("#pos4").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
-        $("#button1").animate({maxWidth: "24.5%", left: "150.5%"}, 1000);
-        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        button2.css({"width": "24.5%", "left": lAdd - 50 + "%"});
+        pos1.css({"width": "24.5%", "left": lAdd - 25 + "%"});
+        pos3.css({"width": "24.5%", "left": lAdd * -1 + 100.5 + "%"});
+        pos4.css({"width": "24.5%", "left": lAdd * -1 + 125.5 + "%"});
+        button1.css({"width": "24.5%", "left": lAdd * -1 + 150.5 + "%"});
+        $(this).css({"width": wAdd + "%", "left": lAdd + "%"});
         });
         
-        $("#pos3").on("click", function() {
-        $(this).removeClass('select');
-        $("#pos2").addClass('select');
-        $("#pos4").addClass('select');
+        pos3.on("click", function() {
+        // $(this).removeClass('select');
+        // pos2.addClass('select');
+        // pos4.addClass('select');
         selected = 3;
-        $("#button2").animate({maxWidth: "24.5%", left: "-75%"}, 1000);
-        $("#pos1").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
-        $("#pos2").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
-        $("#pos4").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
-        $("#button1").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
-        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        button2.css({"width": "24.5%", "left": lAdd - 75 + "%"});
+        pos1.css({"width": "24.5%", "left": lAdd - 50 + "%"});
+        pos2.css({"width": "24.5%", "left": lAdd - 25 + "%"});
+        pos4.css({"width": "24.5%", "left": lAdd * -1 + 100.5 + "%"});
+        button1.css({"width": "24.5%", "left": lAdd * -1 + 125.5 + "%"});
+        $(this).css({"width": wAdd + "%", "left": lAdd + "%"});
         });
         
-        $("#pos4").on("click", function() {
-        $(this).removeClass('select');
-        $("#pos3").addClass('select');
-        $("#button1").addClass('select');
+        pos4.on("click", function() {
+        // $(this).removeClass('select');
+        // pos3.addClass('select');
+        // button1.addClass('select');
         selected = 4;
-        $("#button2").animate({maxWidth: "24.5%", left: "-100%"}, 1000);
-        $("#pos1").animate({maxWidth: "24.5%", left: "-75%"}, 1000);
-        $("#pos2").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
-        $("#pos3").animate({maxWidth: "24.5%", left: "-25%"}, 1000);
-        $("#button1").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
-        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        button2.css({"width": "24.5%", "left": "-100%"});
+        pos1.css({"width": "24.5%", "left": lAdd - 75 + "%"});
+        pos2.css({"width": "24.5%", "left": lAdd - 50 + "%"});
+        pos3.css({"width": "24.5%", "left": lAdd - 25 + "%"});
+        button1.css({"width": "24.5%", "left": lAdd * -1 + 100.5 + "%"});
+        $(this).css({"width": wAdd + "%", "left": lAdd + "%"});
         });
         
-        $("#button1").on("click", function() {
-        $(this).removeClass('select');
-        $("#pos4").addClass('select');
+        button1.on("click", function() {
+        // $(this).removeClass('select');
+        // pos4.addClass('select');
         selected = 5;
-        $("#button2").animate({maxWidth: "24.5%", left: "-125%"}, 1000);
-        $("#pos1").animate({maxWidth: "24.5%", left: "-100%"}, 1000);
-        $("#pos2").animate({maxWidth: "24.5%", left: "-75%"}, 1000);
-        $("#pos3").animate({maxWidth: "24.5%", left: "-50%"}, 1000);
-        $("#pos4").animate({maxWidth: "24.5%", left: "-25%"}, 1000)
-        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        pos1.css({"width": "24.5%", "left": "0%"});
+        pos2.css({"width": "24.5%", "left": "25%"});
+        pos3.css({"width": "24.5%", "left": "50%"});
+        pos4.css({"width": "24.5%", "left": "75%"});
+        button2.css({"width": "24.5%", "left": "-25%"});
+        // $(this).css({"width": wAdd + "%", "left": "100%"});
         });
         
-        $("#button2").on("click", function() {
-        $(this).removeClass('select');
-        $("#pos1").addClass('select');
+        button2.on("click", function() {
+        // $(this).removeClass('select');
+        // pos1.addClass('select');
         selected = 0;
-        $("#pos1").animate({maxWidth: "24.5%", left: "100.5%"}, 1000);
-        $("#pos2").animate({maxWidth: "24.5%", left: "125.5%"}, 1000);
-        $("#pos3").animate({maxWidth: "24.5%", left: "150.5%"}, 1000);
-        $("#pos4").animate({maxWidth: "24.5%", left: "175.5%"}, 1000);
-        $("#button1").animate({maxWidth: "24.5%", left: "200.5%"}, 1000);
-        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        pos1.css({"width": "24.5%", "left": "0%"});
+        pos2.css({"width": "24.5%", "left": "25%"});
+        pos3.css({"width": "24.5%", "left": "50%"});
+        pos4.css({"width": "24.5%", "left": "75%"});
+        button1.css({"width": "24.5%", "left": "100%"});
+        // $(this).css({"width": wAdd + "%", "left": "0%"});
         });
-
-
-        var movementStrength = 25;
-        var height = movementStrength / $("#button2").height();
-        var width = movementStrength / $("#button2").width();
-        $("#container1").mousemove(function(e){
-          var wpos = $("#button2").width()/2.5;
-          var pageX = e.pageX - ($("#button2").width());
-          var pageY = e.pageY - ($("#button2").height());
-          var newvalueX = width * pageX * -1 - 25;
-          var newvalueY = height * pageY * -1 - 50;
-          $('#container1').css("background-position", newvalueX+ wpos + "px     "+newvalueY+"px");
-          });
         
 });
 </script>

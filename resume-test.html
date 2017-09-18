@@ -1,0 +1,310 @@
+<style>
+#doc {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #202e4a;
+}
+
+.cate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #000;
+}
+
+#button1{
+  left: 101%;
+  position: absolute;
+  max-width: 24.5%;
+  /* visibility: hidden; */
+  background: #202e4a;
+  -webkit-transform: skew(20deg);
+}
+
+#button2 {
+  left: -25%;
+  position: absolute;
+  max-width: 24.5%;
+  /* visibility: hidden; */
+  background: #202e4a;
+  -webkit-transform: skew(20deg);
+}
+
+.button2 {
+  left: -25%;
+  position: absolute;
+  max-width: 24.5%;
+  /* visibility: hidden; */
+  background: #202e4a;
+  -webkit-transform: skew(20deg);
+}
+#square {
+  position: absolute;
+  width: 400px;
+  height: 225px;
+    background: url("  http://i2.cdn.turner.com/money/dam/assets/170627170247-original-iphone-1024x576.jpg");
+  background-size: 400px 225px;
+  transform:skew(-20deg);
+  background-color: white;
+}
+
+#square3 {
+      position: absolute;
+  width: 800px;
+  height: 450px;
+    background: url("https://www.twitch.tv/p/assets/uploads/twitch_474x356.png");
+  background-size: 800px 450px;
+  transform:skew(-20deg);
+  left: -100%;
+  background-color: white;
+}
+
+#square4 {
+        position: absolute;
+  width: 800px;
+  height: 450px;
+/*     background: url("https://lh3.googleusercontent.com/6iw3PJ3j8Aj0M8VMbp6Lmtlo0BZ0Ka5y_5KYxZh6Xh_wZIzZ0nv2neVe8lLm-gHLSNf4=w300"); */
+  background-size: 100% 100%;
+  transform:skew(-20deg);
+  left: -100%;
+  background-color: white;
+}
+
+#telus{
+  content: url(http://logos-download.com/wp-content/uploads/2016/04/Telus_logo_logotype.png);
+  position: center;
+  width: 500px;
+  heoght: 500px;
+}
+
+.select{
+  transition: opacity 0.8s;
+}
+.select:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+#pos1 {
+  left: 0%;
+  max-width: 24.5%;
+  background: url("  http://i2.cdn.turner.com/money/dam/assets/170627170247-original-iphone-1024x576.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  
+}
+
+#pos2 {
+  max-width: 24.5%;
+  left: 25%;
+    background: url("https://fa707ec5abab9620c91c-e087a9513984a31bae18dd7ef8b1f502.ssl.cf1.rackcdn.com/8510555_5-companies-that-are-going-above-and-beyond_t19197488.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: white;
+}
+#pos3 {
+  max-width: 24.5%;
+  left: 50%;
+  background: url("https://www.twitch.tv/p/assets/uploads/twitch_474x356.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: #4B357D;
+}
+
+#pos4 {
+  max-width: 24.5%;
+  left: 75%;
+    background: url("https://lh3.googleusercontent.com/6iw3PJ3j8Aj0M8VMbp6Lmtlo0BZ0Ka5y_5KYxZh6Xh_wZIzZ0nv2neVe8lLm-gHLSNf4=w300");
+      background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: white;
+    
+}
+
+
+#wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -0.25%;
+  max-width: 25.5%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+
+#wrapper2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 25.5%;
+  left: 24.75%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+#wrapper3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 25%;
+  left: 49.75%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+
+#wrapper4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 25%;
+  left: 74.75%;
+  overflow: hidden;
+  transform:skew(20deg);
+  background-color: #202e4a;
+}
+</style>
+
+<section id="doc">
+<div class="select cate" id="button1">
+</div>
+<div class="select cate" id="button2">
+</div>
+<div class="cate select" id="pos1">
+</div>
+<div class="cate select" id="pos2">
+<div id="telus">
+</div>
+</div>
+<div class="cate select" id="pos3">
+</div>
+<div class="cate select" id="pos4">
+</div>
+<div id="wrapper">
+</div>
+<div id="wrapper2">
+</div>
+<div id="wrapper3">
+</div>
+<div id="wrapper4">
+</div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+        var selected;
+        
+        var h = $("#doc").height();
+        var w = $("#doc").width();
+        var tan = 2.747;
+        var d = h / 2.747;
+        var p = (d / w) * 100;
+        var three = 50 - p;
+        var two = 25 + p;
+        var four = 75 + p;
+        
+       // $("#button").stop(true, true).delay(1000).animate({left: "40%"}, 800);
+        
+        $("#wrapper3").stop(true, true).delay(500).animate({left: three + "%", 
+        top: '-100%'}, 250);
+        $("#wrapper").stop(true, true).delay(0).animate({left: "-" + p + "%", 
+        top: '-100%'}, 250);
+        $("#wrapper2").stop(true, true).delay(250).animate({left: two + "%", 
+        top: '100%'}, 250);
+        $("#wrapper4").stop(true, true).delay(750).animate({left: four + "%", 
+        top: '100%'}, 250);
+        
+        $("#pos1").on("click", function(){
+        $(this).removeClass('select');
+        $("#button2").addClass('select');
+        $("#pos2").addClass('select');
+        selected = 1;
+        $("#button2").animate({maxWidth: "24%", left: "-25%"}, 1000);
+        $("#pos2").animate({maxWidth: "24%", left: "101%"}, 1000);
+        $("#pos3").animate({maxWidth: "24%", left: "126%"}, 1000);
+        $("#pos4").animate({maxWidth: "24%", left: "151%"}, 1000);
+        $("#button1").animate({maxWidth: "24%", left: "176%"}, 1000);
+        $("#pos1").animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#pos2").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos1").addClass('select');
+        $("#pos3").addClass('select');
+        selected = 2;
+        $("#button2").animate({maxWidth: "24%", left: "-50%"}, 1000);
+        $("#pos1").animate({maxWidth: "24%", left: "-25%"}, 1000);
+        $("#pos3").animate({maxWidth: "24%", left: "101%"}, 1000);
+        $("#pos4").animate({maxWidth: "24%", left: "126%"}, 1000);
+        $("#button1").animate({maxWidth: "24%", left: "151%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#pos3").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos2").addClass('select');
+        $("#pos4").addClass('select');
+        selected = 3;
+        $("#button2").animate({maxWidth: "24%", left: "-75%"}, 1000);
+        $("#pos1").animate({maxWidth: "24%", left: "-50%"}, 1000);
+        $("#pos2").animate({maxWidth: "24%", left: "-25%"}, 1000);
+        $("#pos4").animate({maxWidth: "24%", left: "101%"}, 1000);
+        $("#button1").animate({maxWidth: "24%", left: "126%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#pos4").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos3").addClass('select');
+        $("#button1").addClass('select');
+        selected = 4;
+        $("#button2").animate({maxWidth: "24%", left: "-100%"}, 1000);
+        $("#pos1").animate({maxWidth: "24%", left: "-75%"}, 1000);
+        $("#pos2").animate({maxWidth: "24%", left: "-50%"}, 1000);
+        $("#pos3").animate({maxWidth: "24%", left: "-25%"}, 1000);
+        $("#button1").animate({maxWidth: "24%", left: "101%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#button1").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos4").addClass('select');
+        selected = 5;
+        $("#button2").animate({maxWidth: "24%", left: "-125%"}, 1000);
+        $("#pos1").animate({maxWidth: "24%", left: "-100%"}, 1000);
+        $("#pos2").animate({maxWidth: "24%", left: "-75%"}, 1000);
+        $("#pos3").animate({maxWidth: "24%", left: "-50%"}, 1000);
+        $("#pos4").animate({maxWidth: "24%", left: "-25%"}, 1000)
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+        $("#button2").on("click", function() {
+        $(this).removeClass('select');
+        $("#pos1").addClass('select');
+        selected = 0;
+        $("#pos1").animate({maxWidth: "24%", left: "101%"}, 1000);
+        $("#pos2").animate({maxWidth: "24%", left: "126%"}, 1000);
+        $("#pos3").animate({maxWidth: "24%", left: "151%"}, 1000);
+        $("#pos4").animate({maxWidth: "24%", left: "176%"}, 1000);
+        $("#button1").animate({maxWidth: "24%", left: "201%"}, 1000);
+        $(this).animate({maxWidth: "100%", left: "0%"}, 1000);
+        });
+        
+});
+</script>

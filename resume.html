@@ -65,10 +65,11 @@ body {
 }
 
 .select{
-  /*transition: opacity 1s;*/
+  opacity: 0.65;
+  transition: opacity 1s;
 }
 .select:hover {
-  /*opacity: 0.65;*/
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -139,7 +140,7 @@ body {
   height: 200%;
   top: -100%;
   left: -50%;
-  background: url("https://images8.alphacoders.com/702/702959.jpg");
+  background-color: purple;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,7 +184,7 @@ body {
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
-  transition: all 0.4s;
+  transition: all 0.25s;
   transition-delay: 0.5s;
 }
 
@@ -197,8 +198,8 @@ body {
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
-  transition: all 0.4s;
-  transition-delay: 0.9s;
+  transition: all 0.25s;
+  transition-delay: 0.75s;
 }
 #wrapper3 {
   position: absolute;
@@ -210,8 +211,8 @@ body {
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
-  transition: all 0.4s;
-  transition-delay: 1.3s
+  transition: all 0.25s;
+  transition-delay: 1s
 }
 
 #wrapper4 {
@@ -224,24 +225,16 @@ body {
   overflow: hidden;
   transform:skew(20deg);
   background-color: #202e4a;
-  transition: all 0.4s;
-  transition-delay: 1.7s;
+  transition: all 0.25s;
+  transition-delay: 1.25s;
 }
 
-#square {
-    margin: 0; /*for centering purposes*/
-    float: left;
-    -webkit-transition: width 1s, height 1s, top 1s, left 1s, margin 1s;
-    -moz-transition: width 1s, height 1s, top 1s, left 1s, margin 1s;
-    -ms-transition: width 1s, height 1s, top 1s, left 1s, margin 1s ;
-    transition: width 1s, height 1s, top 1s, left 1s, margin 1s;
-}
 </style>
 <!-- <section id="doc"> -->
 <section id="doc">
-<div class="select cate" id="button1">
+<div class="cate" id="button1">
 </div>
-<div class="cate select" id="button2">
+<div class="cate" id="button2">
 </div>
 <div class="cate select" id="pos1">
 <div id="overlay">
@@ -315,9 +308,9 @@ $(document).ready(function(){
         $("#wrapper4").css({"left": four + "%", "top": '100%'});
         
         pos1.on("click", function(){
-        // $(this).removeClass('select');
-        // button2.addClass('select');
-        // pos2.addClass('select');
+        $(this).removeClass('select');
+        button2.addClass('select');
+        pos2.addClass('select');
         selected = 1;
         button2.css({"width": "24.5%", "left": lAdd + -25 + "%"});
         pos2.css({"width": "24.5%", "left": lAdd * -1 + 100.5 + "%"});
@@ -328,9 +321,9 @@ $(document).ready(function(){
         });
         
         pos2.on("click", function() {
-        // $(this).removeClass('select');
-        // pos1.addClass('select');
-        // pos3.addClass('select');
+        $(this).removeClass('select');
+        pos1.addClass('select');
+        pos3.addClass('select');
         selected = 2;
         button2.css({"width": "24.5%", "left": lAdd - 50 + "%"});
         pos1.css({"width": "24.5%", "left": lAdd - 25 + "%"});
@@ -341,9 +334,9 @@ $(document).ready(function(){
         });
         
         pos3.on("click", function() {
-        // $(this).removeClass('select');
-        // pos2.addClass('select');
-        // pos4.addClass('select');
+        $(this).removeClass('select');
+        pos2.addClass('select');
+        pos4.addClass('select');
         selected = 3;
         button2.css({"width": "24.5%", "left": lAdd - 75 + "%"});
         pos1.css({"width": "24.5%", "left": lAdd - 50 + "%"});
@@ -354,33 +347,32 @@ $(document).ready(function(){
         });
         
         pos4.on("click", function() {
-        // $(this).removeClass('select');
-        // pos3.addClass('select');
-        // button1.addClass('select');
+        $(this).removeClass('select');
+        pos3.addClass('select');
+        button1.addClass('select');
         selected = 4;
         button2.css({"width": "24.5%", "left": "-100%"});
         pos1.css({"width": "24.5%", "left": lAdd - 75 + "%"});
         pos2.css({"width": "24.5%", "left": lAdd - 50 + "%"});
         pos3.css({"width": "24.5%", "left": lAdd - 25 + "%"});
         button1.css({"width": "24.5%", "left": lAdd * -1 + 100.5 + "%"});
-        $(this).css({"width": wAdd + "%", "left": lAdd + "%"});
+        $(this).css({"width": wAdd - 0.5 + "%", "left": lAdd + "%"});
         });
         
         button1.on("click", function() {
-        // $(this).removeClass('select');
-        // pos4.addClass('select');
+        $(this).removeClass('select');
+        pos4.addClass('select');
         selected = 5;
         pos1.css({"width": "24.5%", "left": "0%"});
         pos2.css({"width": "24.5%", "left": "25%"});
         pos3.css({"width": "24.5%", "left": "50%"});
         pos4.css({"width": "24.5%", "left": "75%"});
         button2.css({"width": "24.5%", "left": "-25%"});
-        // $(this).css({"width": wAdd + "%", "left": "100%"});
         });
         
         button2.on("click", function() {
-        // $(this).removeClass('select');
-        // pos1.addClass('select');
+        $(this).removeClass('select');
+        pos1.addClass('select');
         selected = 0;
         pos1.css({"width": "24.5%", "left": "0%"});
         pos2.css({"width": "24.5%", "left": "25%"});

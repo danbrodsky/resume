@@ -127,16 +127,18 @@ body {
 
 .dropdown-content a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid black;
     border-left: 1px solid grey;
     transition: color 0.5s ease;
-    color: grey;
-    padding: 20% 5%;
+    color: black;
+    padding: 20% 0%;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {color: black;}
+.dropdown-content a:hover {color: white; background-color: black;}
+
+/*.dropdown-content:hover {color: #000;}*/
 
 .dropbtn {
     cursor: pointer;
@@ -403,7 +405,7 @@ body {
   Get in Touch
 </div>
 <div class="dropdown-content">
-  <a href="mailto:d6brodsky@gmail.com" target="_blank">D6Brodsky@gmail.com</a>
+  <a href="mailto:d6brodsky@gmail.com" target="_blank">&nbsp; &nbsp; &nbsp; D6Brodsky@gmail.com &nbsp; &nbsp; </a>
   <a href="https://www.linkedin.com/in/danbrodsky" target="_blank">LinkedIn</a>
   <a href="https://github.com/danbrodsky" target="_blank">GitHub</a>
   <a href="https://www.linkedin.com/in/danbrodsky" target="_blank">Curriculum Vitae</a>
@@ -502,9 +504,10 @@ $(document).ready(function(){
         pos4.css({"width": "24.5%", "left": lAdd * -1 + 150.5 + "%"});
         button1.css({"width": "24.5%", "left": lAdd * -1 + 175.5 + "%"});
         $(this).css({"width": wAdd + "%", "left": lAdd + "%"});
-        $("#info1").css({"opacity": "1", "visibility": "visible"});
+        $("#info1").css({"opacity": "1"});
         $("#button3").css({"opacity": "1"});
         setTimeout(function(){
+          $("#info1").css({"visibility": "visible"});
           $("#button3").css({"visibility": "visible"});
         }, 1000);
         });
